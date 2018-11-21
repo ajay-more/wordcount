@@ -1,0 +1,13 @@
+<h1>Counted</h1>
+{{text}}
+<br>
+total words = {{count_no}}
+<br>
+
+<br>
+
+{% for word,value in word_dic %}
+{{word}} = {{value}}
+{% endfor %}
+
+<a href="{% url 'home' %}" > Click here to back to home page </a>
